@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\MovieController;
+use App\Http\Controllers\BestSellerController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,3 +17,5 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/', [MovieController::class, 'index'])->name('home');
+
+Route::get('/best-seller', [MovieController::class, 'best'])->name('bestseller');
